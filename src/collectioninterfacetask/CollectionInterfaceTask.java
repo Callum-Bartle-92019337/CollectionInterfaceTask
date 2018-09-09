@@ -6,7 +6,6 @@
 package collectioninterfacetask;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Stack;
 import java.util.LinkedList;
 
