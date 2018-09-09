@@ -6,8 +6,10 @@
 package collectioninterfacetask;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Stack;
 import java.util.LinkedList;
+import java.util.Set;
 
 /**
  *
@@ -15,11 +17,16 @@ import java.util.LinkedList;
  */
 public class CollectionInterfaceTask {
 
+    private static int breakNumber = 0;
+
     public static void pntbr() {
-        System.out.println("========================================");
+        breakNumber += 1;
+        System.out.println(breakNumber + "========================================");
     }
 
     public static void main(String[] args) {
+
+        pntbr();
 
         ArrayList array1 = new ArrayList();
         array1.add("3.14");
@@ -60,6 +67,20 @@ public class CollectionInterfaceTask {
         System.out.println(linkedList1);
         linkedList1.clear();
         System.out.println(linkedList1);
+
+        pntbr();
+
+        Set<String> set1 = new HashSet<>();
+        set1.add("3.14");
+        set1.add("2.72");
+        set1.add("1.13");
+        System.out.println(set1.size());
+        System.out.println(set1);
+        System.out.println(set1.contains("3.14"));
+        System.out.println(set1.remove("3.14"));
+        System.out.println(set1);
+        set1.clear();
+        System.out.println(set1);
     }
 
 }
